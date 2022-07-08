@@ -6,12 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="chat-client" />
         <module name="chat-server" />
+        <module name="chat-client" />
+        <module name="chat-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="chat-client" target="11" />
+      <module name="chat-common" target="11" />
       <module name="chat-server" target="11" />
       <module name="Java2flow" target="11.0.13" />
     </bytecodeTargetLevel>

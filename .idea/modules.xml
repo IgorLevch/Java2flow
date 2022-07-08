@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Java2flow.iml" filepath="$PROJECT_DIR$/.idea/Java2flow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java2flow.iml" filepath="$PROJECT_DIR$/Java2flow.iml" />
       <module fileurl="file://$PROJECT_DIR$/chat-client/chat-client.iml" filepath="$PROJECT_DIR$/chat-client/chat-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chat-common/chat-common.iml" filepath="$PROJECT_DIR$/chat-common/chat-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/chat-server/chat-server.iml" filepath="$PROJECT_DIR$/chat-server/chat-server.iml" />
     </modules>
   </component>
