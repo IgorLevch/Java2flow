@@ -21,6 +21,7 @@ public class Application extends javafx.application.Application {
         Parent parent = loader.load();
         Scene scene = new Scene(parent);
         stage.setScene(scene);
+        stage.setTitle("May chat");
         stage.show();
 
     }
