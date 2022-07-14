@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.net.Socket;
 
 
+import static java.lang.Thread.sleep;
 import static ru.gb.may_chat.constants.MessageConstants.REGEX;
 import static ru.gb.may_chat.enums.Command.*;
 
@@ -37,6 +38,7 @@ public class Handler {
 
     public void handle() {
         handlerThread = new Thread(() -> {
+
             authorize();
             System.out.println("Auth done");
             while (!Thread.currentThread().isInterrupted() && !socket.isClosed()) {
@@ -50,6 +52,7 @@ public class Handler {
             }
         });
         handlerThread.start();
+
     }
 
     private void parseMessage(String message) {

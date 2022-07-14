@@ -25,10 +25,12 @@ public class PropertyReader {
     public void getPropValues() {
         var propFileName = "application.properties";
         try (InputStream inputStream = getClass().getClassLoader().getResourceAsStream(propFileName)) {
-            Properties properties = new Properties();
-            properties.load(inputStream);
-            host = properties.getProperty("host");
-            port = Integer.parseInt(properties.getProperty("port"));
+            // входящий поток данных ,получаем данные по пропертиес
+            Properties properties = new Properties(); // класс пропертиес из пакета джава утил
+            properties.load(inputStream); // чтбы получить значения из файла, вызываем метод лоад и скачиваем из
+            // него наш поток
+            host = properties.getProperty("host");  //эта и две следующие строки - получаем значение пропертиес.Строка
+            port = Integer.parseInt(properties.getProperty("port")); // число. поэтому делаем парс инт
             authTimeout = Long.parseLong(properties.getProperty("auth.timeout"));
 
         } catch (Exception e) {
@@ -38,7 +40,7 @@ public class PropertyReader {
 
     public String getHost() {
         return host;
-    }
+    }  // используем геттеры, чтобы получить занчение этих пропертей.
 
     public int getPort() {
         return port;
