@@ -1,5 +1,6 @@
 package ru.gb.may_chat.client.net;
 
+import history.HistoryService;
 import ru.gb.may_chat.props.PropertyReader;
 
 import java.io.DataInputStream;
@@ -39,6 +40,7 @@ public class NetworkService {
                     String income = in.readUTF();
                     System.out.println("Got income message");
                     messageProcessor.processMessage(income);
+
                 }
             } catch (IOException e) {
                 e.printStackTrace();
